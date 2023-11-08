@@ -1,0 +1,9 @@
+Uri Identifier,Label,Notation,Parent Uri Identifier,Sort Priority,Description
+-in-course-of-dissolution,                    in course of dissolution,-in-course-of-dissolution,,0,
+-in-liquidation,      in liquidation,-in-liquidation,,1,
+-dissolved,  Dissolved,-dissolved,,2,
+-incorporations,  Incorporations,-incorporations,,3,
+-restored-to-the-register,  Restored to the register,-restored-to-the-register,,4,
+effective-numbers-on-register-at-end-of-period,Effective numbers on register at end of period,effective-numbers-on-register-at-end-of-period,,5,
+on-register-at-end-of-period,On register at end of period,on-register-at-end-of-period,,6,
+on-register-at-start-of-period,On register at start of period,on-register-at-start-of-period,,7,

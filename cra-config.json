@@ -1,0 +1,42 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Summary of changes in Limited Liability Partnerships, 2012-13 to 2021-22",
+    "summary": "Other Corporate Bodies Administered at Companies House. Snapshot for register size, in liquidation, in dissolution, and Standard Industrial Classification codes; forms accepted within the year for incorporations, restorations and dissolutions",
+    "description": "There may be minor discrepancies when calculating the number of companies on the register (on the register at the start of the period, plus incorporations plus restorations minus dissolved companies). Similar discrepancies may be experienced when comparing data across other tables within this report. This is due to slight scheduling variations when extracting the data.",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "public_contact_point_uri": "mailto:statistics@companieshouse.gov.uk",
+    "themes": ["https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes"],
+    "publisher": "https://www.gov.uk/government/organisations/companies-house",
+    "creator": "https://www.gov.uk/government/organisations/companies-house",
+    "dataset_issued": "2022-03-31T00:00:00Z",
+    "dataset_modified": "2022-03-31T00:00:00Z",
+    "keywords": ["corporate", "partnerships", "limited", "Liability"],
+    "columns": {
+        "Limited Liability Partnerships": {
+            "type": "dimension",
+            "label": "Limited Liability Partnerships"
+        },
+        "Year": {
+            "from_template": "government-year"
+        },
+        "Country": {
+            "type": "dimension",
+            "label": "Country"
+        },
+        "ONS-code": {
+            "from_template": "statistical-geography"
+        },
+        "Value": {
+            "type": "observations",
+            "measure": {
+                "label": "Number of changes in Limited Liability Partnerships",
+                "from_existing": "https://purl.org/csv-cubed/resources/measures#count"
+            },
+            "data_type": "integer",
+            "unit": {
+                "label": "Number",
+                "from_existing": "http://qudt.org/vocab/unit/NUM"
+            }
+        }
+    }
+}

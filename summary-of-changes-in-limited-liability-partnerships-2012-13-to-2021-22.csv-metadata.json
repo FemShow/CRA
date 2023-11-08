@@ -1,0 +1,776 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dataset",
+    "tables": [
+        {
+            "url": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "titles": "Limited Liability Partnerships",
+                        "name": "limited_liability_partnerships",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/limited-liability-partnerships",
+                        "valueUrl": "limited-liability-partnerships.csv#{+limited_liability_partnerships}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Year",
+                        "name": "year",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+year}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Country",
+                        "name": "country",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/country",
+                        "valueUrl": "country.csv#{+country}",
+                        "required": true
+                    },
+                    {
+                        "titles": "ONS-code",
+                        "name": "ons_code",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+ons_code}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Value",
+                        "name": "value",
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#measure/number-of-changes-in-limited-liability-partnerships",
+                        "datatype": "integer",
+                        "required": true
+                    },
+                    {
+                        "name": "virt_slice",
+                        "virtual": true,
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Slice"
+                    },
+                    {
+                        "name": "virt_slice_structure",
+                        "virtual": true,
+                        "propertyUrl": "qb:sliceStructure",
+                        "valueUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#slice/cross-measures"
+                    },
+                    {
+                        "name": "virt_obs_value",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships"
+                    },
+                    {
+                        "name": "virt_obs_value_meas",
+                        "virtual": true,
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#measure/number-of-changes-in-limited-liability-partnerships"
+                    },
+                    {
+                        "name": "virt_obs_value_unit",
+                        "virtual": true,
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#unit/number"
+                    },
+                    {
+                        "name": "virt_dim_value_limited_liability_partnerships",
+                        "virtual": true,
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/limited-liability-partnerships",
+                        "valueUrl": "limited-liability-partnerships.csv#{+limited_liability_partnerships}"
+                    },
+                    {
+                        "name": "virt_dim_value_year",
+                        "virtual": true,
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/government-year",
+                        "valueUrl": "government-year.csv#{+year}"
+                    },
+                    {
+                        "name": "virt_dim_value_country",
+                        "virtual": true,
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/country",
+                        "valueUrl": "country.csv#{+country}"
+                    },
+                    {
+                        "name": "virt_dim_value_ons_code",
+                        "virtual": true,
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/statistical-geography",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+ons_code}"
+                    },
+                    {
+                        "name": "virt_obs_value_type",
+                        "virtual": true,
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_value",
+                        "virtual": true,
+                        "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#obs/{limited_liability_partnerships},{year},{country},{ons_code}@number-of-changes-in-limited-liability-partnerships",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dataset"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": "limited_liability_partnerships",
+                        "reference": {
+                            "resource": "limited-liability-partnerships.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "year",
+                        "reference": {
+                            "resource": "government-year.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "country",
+                        "reference": {
+                            "resource": "country.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "limited_liability_partnerships",
+                    "year",
+                    "country",
+                    "ons_code"
+                ],
+                "aboutUrl": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#slice/{limited_liability_partnerships},{year},{country},{ons_code}"
+            }
+        },
+        {
+            "url": "limited-liability-partnerships.csv",
+            "tableSchema": "limited-liability-partnerships.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "government-year.csv",
+            "tableSchema": "government-year.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "country.csv",
+            "tableSchema": "country.table.json",
+            "suppressOutput": true
+        }
+    ],
+    "rdfs:seeAlso": [
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#slice/cross-measures",
+            "@type": [
+                "http://purl.org/linked-data/cube#SliceKey",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/government-year"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/statistical-geography"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/country"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/limited-liability-partnerships"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/statistical-geography",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/statistical-geography"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/statistical-geography"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/country",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/country"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/country"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#class/statistical-geography",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/country",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "country.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Country"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#class/country"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#class/limited-liability-partnerships",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/limited-liability-partnerships",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/limited-liability-partnerships"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/limited-liability-partnerships"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/number-of-changes-in-limited-liability-partnerships",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#measure/number-of-changes-in-limited-liability-partnerships"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#measure/number-of-changes-in-limited-liability-partnerships"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/unit",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": true
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/statistical-geography",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Statistical Geography"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#class/statistical-geography"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dataset",
+            "@type": [
+                "http://purl.org/linked-data/cube#Attachable",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://purl.org/linked-data/cube#DataSet",
+                "http://www.w3.org/ns/dcat#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/dc/terms/creator": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/companies-house"
+                }
+            ],
+            "http://purl.org/dc/terms/description": [
+                {
+                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
+                    "@value": "There may be minor discrepancies when calculating the number of companies on the register (on the register at the start of the period, plus incorporations plus restorations minus dissolved companies). Similar discrepancies may be experienced when comparing data across other tables within this report. This is due to slight scheduling variations when extracting the data."
+                }
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "Summary of changes in Limited Liability Partnerships, 2012-13 to 2021-22"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2022-03-31T00:00:00"
+                }
+            ],
+            "http://purl.org/dc/terms/license": [
+                {
+                    "@id": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2022-03-31T00:00:00"
+                }
+            ],
+            "http://purl.org/dc/terms/publisher": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/companies-house"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "Summary of changes in Limited Liability Partnerships, 2012-13 to 2021-22"
+                }
+            ],
+            "http://purl.org/linked-data/cube#structure": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#structure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Other Corporate Bodies Administered at Companies House. Snapshot for register size, in liquidation, in dissolution, and Standard Industrial Classification codes; forms accepted within the year for incorporations, restorations and dissolutions"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Summary of changes in Limited Liability Partnerships, 2012-13 to 2021-22"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#keyword": [
+                {
+                    "@language": "en",
+                    "@value": "Liability"
+                },
+                {
+                    "@language": "en",
+                    "@value": "limited"
+                },
+                {
+                    "@language": "en",
+                    "@value": "partnerships"
+                },
+                {
+                    "@language": "en",
+                    "@value": "corporate"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#theme": [
+                {
+                    "@id": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes"
+                }
+            ],
+            "http://www.w3.org/ns/prov#wasGeneratedBy": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#csvcubed-build-activity"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#class/country",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/ns/prov#Activity",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.4.4"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/government-year",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "government-year.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Government Year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#class/government-year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#class/government-year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/government-year",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/government-year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/government-year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#measure/number-of-changes-in-limited-liability-partnerships",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Number of changes in Limited Liability Partnerships"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#integer"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "https://purl.org/csv-cubed/resources/measures#count"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/limited-liability-partnerships",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "limited-liability-partnerships.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Limited Liability Partnerships"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#class/limited-liability-partnerships"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#structure",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#DataStructureDefinition"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/statistical-geography"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/number-of-changes-in-limited-liability-partnerships"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/measure-type"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/government-year"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/unit"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/limited-liability-partnerships"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#component/country"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/government-year"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/statistical-geography"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/limited-liability-partnerships"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dimension/country"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#measure/number-of-changes-in-limited-liability-partnerships"
+                }
+            ],
+            "http://purl.org/linked-data/cube#sliceKey": [
+                {
+                    "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#slice/cross-measures"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dependency/limited-liability-partnerships",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./limited-liability-partnerships.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "limited-liability-partnerships.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dependency/government-year",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./government-year.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "government-year.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#dependency/country",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./country.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "country.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "summary-of-changes-in-limited-liability-partnerships-2012-13-to-2021-22.csv#unit/number",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Number"
+                }
+            ]
+        }
+    ]
+}
